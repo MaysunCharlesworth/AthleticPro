@@ -1,67 +1,120 @@
-body {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #111;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #0f1115;
+  color: white;
   scroll-behavior: smooth;
 }
 
-/* NAVBAR */
-.navbar {
-  position: sticky;
+/* NAV */
+.nav {
+  position: fixed;
   top: 0;
-  background: white;
+  width: 100%;
+  padding: 18px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  border-bottom: 1px solid #eee;
+  backdrop-filter: blur(12px);
+  background: rgba(15,17,21,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  z-index: 1000;
 }
 
-.navbar .logo {
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.navbar nav a {
-  margin-left: 15px;
+.nav nav a {
+  color: white;
   text-decoration: none;
-  color: #111;
+  margin-left: 20px;
+  font-size: 14px;
+  opacity: 0.8;
 }
 
-.navbar nav a:hover {
-  color: #0077ff;
+.nav nav a:hover {
+  opacity: 1;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background: radial-gradient(circle at top, #1a2a6c, #0f1115 60%);
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  opacity: 0.8;
+  max-width: 600px;
+  margin: 0 auto 25px;
+}
+
+.btn {
+  padding: 12px 25px;
+  background: #3b82f6;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }
 
 /* SECTIONS */
 .section {
-  padding: 80px 20px;
-  max-width: 900px;
+  padding: 100px 20px;
+  max-width: 1000px;
   margin: auto;
 }
 
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-  background: #f5f7fa;
+.section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.hero h1 {
-  font-size: 40px;
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #0077ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+/* CARDS */
+.card {
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.08);
+}
+
+.highlight {
+  border: 1px solid #3b82f6;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 30px;
-  background: #f5f5f5;
+  padding: 40px;
+  opacity: 0.5;
+}
   margin-top: 40px;
 }
