@@ -4,68 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AthleticPro</title>
+
   <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">AthleticPro</div>
+<header class="nav">
+  <div class="logo">AthleticPro</div>
 
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#packages">Packages</a>
-      <a href="#services">Programs</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#packages">Packages</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <!-- HOME -->
-  <section id="home" class="section hero">
-    <h1>Welcome to AthleticPro</h1>
-    <p>Modern performance training and development built for athletes who want to level up.</p>
-    <a href="#about" class="btn">Learn More</a>
-  </section>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Build. Train. Perform.</h1>
+    <p>Modern athletic development designed to unlock performance, discipline, and long-term growth.</p>
+    <a href="#about" class="btn">Get Started</a>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>
-      AthleticPro is focused on building stronger, smarter, and more confident athletes through structured training,
-      development programs, and personalized coaching.
-    </p>
-  </section>
+<section id="about" class="section">
+  <h2>About AthleticPro</h2>
+  <p>
+    AthleticPro is a performance-focused training system built to help athletes improve skill, mindset, and physical ability through structured development programs.
+  </p>
+</section>
 
-  <!-- PACKAGES -->
-  <section id="packages" class="section">
-    <h2>Packages</h2>
-    <p>
-      Package details will be added here soon. (You’ll be able to customize pricing, tiers, and descriptions.)
-    </p>
-  </section>
+<section id="packages" class="section">
+  <h2>Packages</h2>
 
-  <!-- SERVICES -->
-  <section id="services" class="section">
-    <h2>Programs</h2>
-    <ul>
-      <li>Skill Development Training</li>
-      <li>Performance Coaching</li>
-      <li>Team Clinics</li>
-      <li>Private Sessions</li>
-    </ul>
-  </section>
+  <div class="grid">
+    <div class="card">
+      <h3>Starter</h3>
+      <p>Basic training access and development resources.</p>
+    </div>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: contact@athleticpro.com</p>
-  </section>
+    <div class="card highlight">
+      <h3>Performance</h3>
+      <p>Advanced training + structured coaching system.</p>
+    </div>
 
-  <footer>
-    <p>© 2026 AthleticPro. All rights reserved.</p>
-  </footer>
+    <div class="card">
+      <h3>Elite</h3>
+      <p>Full personalized development experience.</p>
+    </div>
+  </div>
+</section>
 
+<section id="programs" class="section">
+  <h2>Programs</h2>
+
+  <div class="grid">
+    <div class="card">Skill Development</div>
+    <div class="card">Strength & Conditioning</div>
+    <div class="card">Private Training</div>
+    <div class="card">Team Clinics</div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: contact@athleticpro.com</p>
+</section>
+
+<footer>
+  © 2026 AthleticPro
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
